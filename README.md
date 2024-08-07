@@ -1,0 +1,2 @@
+# VidSummarizer
+VidSummarizer FrontEnd
