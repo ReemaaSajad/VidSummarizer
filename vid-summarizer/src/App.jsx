@@ -1,11 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import {Route, Routes} from 'react-router-dom';
+import Home from './components/Home';
+import SignUp from './components/SignUp';
+import Auth from './components/Auth';
+import LogIn from './components/LogIn';
+import Dashboard from './components/Dashboard';
+import NoMatch from './components/NoMatch';
 
 
 export default function App(){
   return(
-    <BrowserRouter>
       <Routes>
         <Route path = "/" element = {<Home/>}></Route>
         <Route path = "/signup" element = {<SignUp/>}></Route>
@@ -13,8 +17,7 @@ export default function App(){
         <Route path = "/login" element = {<LogIn/>}></Route>
         <Route path = "/dashboard" element = {<Dashboard/>}></Route>
         <Route path = "*" element = {<NoMatch/>}></Route>
-      </Routes>   
-    </BrowserRouter>
+      </Routes>  
   )
 }
 
